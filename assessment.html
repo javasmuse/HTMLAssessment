@@ -22,24 +22,24 @@
     </p>
 
 
-  <table>
+<table>
 
-  <h2>TABLE</h2>
+<h2>TABLE</h2>
 
-  <thead>
-    Scores by quarter </thead>
-  <tbody>
+<caption> Scores by quarter</caption>
 
-  <tr>
-    <td colspan="6"><strong>First    Half    Second    Half</strong></td>
-      <tr>
-        <th>Team Name</th>
-        <th>Q1</th>
-        <th>Q2</th>
-        <th>Q3</th>
-        <th>Q4</th>
-        <th>Final</th>
+<tr>
+  <th colspan="1" rowspan="2"<strong>Team Name</th>
+  <th colspan="2"><strong>First    Half</strong></th>
+  <th colspan="2"<strong> Second Half</strong></th>
+  <th colspan="1" rowspan="2"<strong>Final</strong>
+    <tr>
+      <th>Q1</th>
+      <th>Q2</th>
+      <th>Q3</th>
+      <th>Q4</th>
     </tr>
+  <tbody>
     <tr>
       <td>Seattle</td>
       <td>0</td>
@@ -56,6 +56,9 @@
       <td>7</td>
       <td>27</td>
     </tr>
+ </tbody>
+
+ <tfoot>
     <tr>
       <td>Total</td>
       <td>3</td>
@@ -64,14 +67,12 @@
       <td>20</td>
       <td>57</td>
     </tr>
-  </tbody>
-
+  </tfoot>
 </table>
+
 <h2>LIST</h2>
 <a href="https://www.seahawks.com/">Seattle Seahawks</a> <br><br>
 <img src="SeahawksLogo.jpg" alt="SeahawksLogo" height="72" width="96">
-<br>
-<br>
 
 <ul>
 <li>Coach: Pete Carroll</li>
@@ -85,8 +86,8 @@
         Blitz, Boom, and Taima
       </ol>
 
-  <ol>
-    <li>QB</li>
+  <li>QB</li>
+      <ol>
           <li>J.T Barrett</li>
           <li>Paxton Lynch</li>
           <li>Geno Smith</li>
@@ -115,7 +116,40 @@
     <li>Cam Newton</li>
   </ol></ul>
 
+<h2>Form</h2>
+<form>
+  First:
+  <input type="text" name="firstname">
+  Last:
+  <input type="text" name="lastname">
+  <br><br>
+  Favorite Sport:
+  <select>
+    <optgroup label="Sports">
+      <option value="Baseball">Baseball</option>
+      <option value="Football">Football</option>
+      <option value="Basketball">Basketball</option>
+      <option value="Golf">Golf</option>
+      <option value="Hockey">Hockey</option>
+      <option value="Soccer">Soccer</option>
+    </optgroup>
+  </select>
+  <br><br>
+  I have:
+  <input type="checkbox">Attended
+  <input type="checkbox">Played
+  <input type="checkbox">Coached
+  <input type="checkbox">Bet on <br>this sport.
+    <br><br>
+For this sport I prefer the:<br>
 
+  <input type="radio">Amateur
+  <input type="radio">College
+  <input type="radio">Professoinal<br>
+<br>
+  <input type="submit" value="Submit Query">
 
-</body>
+    </form>
+
+  </body>
 </html>
